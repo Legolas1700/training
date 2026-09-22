@@ -1,0 +1,13 @@
+n=int(input("Enter no of monkeys:"))
+m=int(input("Enter no of banana:"))
+p=int(input("Enter no of peanut:"))
+k=int(input("Enter no of banana monkey  can eat:"))
+j=int(input("Enter no of peanut monkey can eat:"))
+if k<0 or j<0:
+  print("Wrong input")
+else:
+  r=(m//k)+(p//j)
+  if m%k>0 or p%j>0:
+    r=r-1
+print("monkey ate are ",r)
+print("Monkey on tree are",n-r)
